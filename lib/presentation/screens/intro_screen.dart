@@ -116,7 +116,7 @@ class _IntroScreenState extends State<IntroScreen> {
                             duration: const Duration(milliseconds: 400),
                             curve: Curves.easeIn);
                       } else {
-                        Navigator.of(context).pushNamed(MainApp.routeName);
+                        Navigator.of(context).pushNamed(MainApp.routerName);
                       }
                     },
                   ),

@@ -1,11 +1,15 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:travel_app/core/constants/color_constants.dart';
+import 'package:travel_app/core/helper/local_storage_helper.dart';
 import 'package:travel_app/presentation/screens/splash_screen.dart';
 import 'package:travel_app/routes.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await LocalStorageHelper.initLocalStorageHelper();
   runApp(DevicePreview(
     builder: (context) => const MyApp(),
     enabled: !kReleaseMode,

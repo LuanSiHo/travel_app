@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
-  static const routeName = "main_app";
+  static const routerName = "main_app";
 
   @override
   State<MainApp> createState() => _MainAppState();

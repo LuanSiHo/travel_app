@@ -6,5 +6,5 @@ import 'package:travel_app/presentation/screens/splash_screen.dart';
 final Map<String, WidgetBuilder> routes = {
   SplashScreen.routerName: (context) => const SplashScreen(),
   IntroScreen.routerName: (context) => const IntroScreen(),
-  MainApp.routeName:(context) => const MainApp()
+  MainApp.routerName:(context) => const MainApp()
 };
